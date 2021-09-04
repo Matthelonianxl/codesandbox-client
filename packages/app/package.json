@@ -33,7 +33,9 @@
     "test": "jest --env=jsdom",
     "test:integrations": "jest --config integration-tests/jest.config.json --maxWorkers=2",
     "test:watch": "jest --watch --env=jsdom",
-    "typecheck": "tsc --noEmit -p tsconfig.check.json && tsc --noEmit -p tsconfig.strictNullChecks.json"
+    "typecheck": "tsc --noEmit -p tsconfig.check.json && tsc --noEmit -p tsconfig.strictNullChecks.json",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "jest": {
     "moduleDirectories": [
@@ -130,7 +132,7 @@
     "graphql-subscriptions-client": "^0.12.0",
     "graphql-tag": "^2.10.1",
     "gsap": "^1.20.3",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-filter": "^5.0.0",
     "gulp-postcss": "^6.4.0",
     "gulp-rev": "^7.1.2",
@@ -144,7 +146,7 @@
     "immutability-helper": "^2.6.6",
     "instantsearch.css": "^7.1.0",
     "is-url": "^1.2.2",
-    "jest-circus": "^22.1.4",
+    "jest-circus": "^23.0.0",
     "jest-each": "^24.8.0",
     "jest-matchers": "20.0.3",
     "jest-snapshot": "^22.1.2",
@@ -230,7 +232,8 @@
     "vue-hot-reload-api": "^2.3.3",
     "vue-template-compiler": "^2.6.10",
     "vue-template-es2015-compiler": "^1.9.1",
-    "xterm": "3.7.0"
+    "xterm": "3.7.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
@@ -353,5 +356,6 @@
     "whatwg-fetch": "^2.0.3",
     "workbox-webpack-plugin": "^3.6.3",
     "worker-loader": "2.0.0"
-  }
+  },
+  "snyk": true
 }
