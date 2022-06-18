@@ -1,4 +1,4 @@
-FROM node:10.22.1-buster
+FROM node:dubnium-buster
 LABEL maintainer "Ives van Hoorne"
 
 RUN mkdir /workspace
