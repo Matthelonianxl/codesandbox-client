@@ -1,3 +1,3 @@
-FROM nginx:1.16.1-alpine
+FROM nginx:1.23.3-alpine
 
 COPY www /var/www/codesandbox
