@@ -149,7 +149,7 @@
     "immer": "^3.2.0",
     "instantsearch.css": "^7.1.0",
     "is-url": "^1.2.2",
-    "jest-circus": "^22.1.4",
+    "jest-circus": "^25.0.0",
     "jest-each": "^24.8.0",
     "jest-snapshot": "^22.1.2",
     "jszip": "^3.1.3",
