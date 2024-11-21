@@ -16,7 +16,7 @@
     "build:rollup": "rollup -c"
   },
   "dependencies": {
-    "tern": "^0.21.0"
+    "tern": "^0.24.3"
   },
   "devDependencies": {
     "rimraf": "^2.6.3",
